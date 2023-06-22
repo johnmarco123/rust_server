@@ -1,0 +1,114 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+  overflow: hidden;
+  user-select: none;
+  color: #FFF
+}
+
+button {
+    margin-left: 20px;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #DDD;
+    border: none;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    opacity: 0.7;
+    transition: 0.2s;
+    box-shadow: 0 3px #999;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px #999;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+#content {
+	grid-area: content;
+}
+
+#dropDown {
+    background-color: #444;
+    margin: 0px 5px;
+    width: 60px;
+    height: 30px;
+    margin-right: 30px;
+    border-radius: 8px;
+    color: #444
+}
+
+.header {
+	grid-area: header;
+	font-family: Helvetica, sans-serif
+}
+
+.footer{
+  grid-area: footer;
+}
+
+.sideBarItem{
+	max-height: 50px;
+	max-width: 50px;
+	padding:5px;
+}
+
+.sideBarItem img{
+	max-height: 50px;
+	max-Width:50px;
+}
+
+.colorPalette{
+	grid-area: colorP;
+	display:flex;
+	flex-direction:grid;
+	flex-flow: wrap;
+}
+
+.options{
+	grid-area: options;
+	padding: 15px;
+    overflow: hi
+}
+
+.colorSwatches{
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	max-height: 40px;
+	max-width: 40px;
+	margin: 5px;
+}
+
+
+.wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 70px 230px  minmax(500px, 1fr);
+    grid-template-rows: 35px minmax(500px, 1fr) 160px;
+    grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "colorP colorP options";
+    background-color: #fff;
+    color: #444;
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    font-size: 150%;
+}
+
+.header {
+    background-color: #999;
+    color: #000;
+}
